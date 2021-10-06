@@ -1,8 +1,9 @@
 //Random Number Generator
-function random(newNum) {
-    return Math.floor(Math.random());
+const r = document.querySelector('#rand')
+function random() {
+    const rand = Math.floor(Math.random() * 10) + 1
+    r.innerHTML = `${rand}`
 }
-console.log(Math.floor(Math.random()* 10 ) +1); 
 
 //document.getElementById
 function changeColor(newColor) {
