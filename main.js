@@ -1,7 +1,7 @@
 //Random Number Generator
 const r = document.querySelector('#rand')
 function random() {
-    const rand = Math.floor(Math.random() * 10) + 1
+    const rand = Math.floor(Math.random() * 20) + 1
     r.innerHTML = `${rand}`
 }
 
