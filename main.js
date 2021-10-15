@@ -5,6 +5,11 @@ function random() {
     r.innerHTML = `${rand}`
 }
 
+const c = document.querySelector('#quote');
+function q() {
+    alert("IM FREE, I AM FREE HAHAHAHAHAHA, Thank you Thank you! Thank you Lord");
+}
+
 //document.getElementById
 function changeColor(newColor) {
     let sweet = document.getElementById('clicked');
@@ -22,10 +27,10 @@ let newImage = document.querySelector('img');
 
 newImage.onclick = function () {
     let mySrc = newImage.getAttribute('src');
-    if (mySrc === '../JavaScript/waffle.jpg') {
-        newImage.setAttribute('src', '../JavaScript/hamburger.jpg');
+    if (mySrc === '../JavaScript/images/waffle.jpg') {
+        newImage.setAttribute('src', '../JavaScript/images/hamburger.jpg');
     } else {
-        newImage.setAttribute('src', '../JavaScript/waffle.jpg')
+        newImage.setAttribute('src', '../JavaScript/images/waffle.jpg')
         console.log('it worked')
     }
 }
