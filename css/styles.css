@@ -1,10 +1,11 @@
 body {
   font-size: 12px;
+  background-color: aqua;
 }
 
 .js-image {
   padding: 10em;
-  background-image: url(../images/javascript.png);
+  background-image: url(../images/waterfall.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin: 1em;
