@@ -31,7 +31,6 @@ newImage.onclick = function () {
         newImage.setAttribute('src', '../JavaScript/images/hamburger.jpg');
     } else {
         newImage.setAttribute('src', '../JavaScript/images/waffle.jpg')
-        console.log('it worked')
     }
 }
 
