@@ -23,15 +23,16 @@ function changePic(newPic) {
 }
 
 //document.querySelector
-let newImage = document.querySelector('img');
+let food = document.querySelector('img');
 
-newImage.onclick = function () {
-    let mySrc = newImage.getAttribute('src');
-    if (mySrc === '../JavaScript/images/waffle.jpg') {
-        newImage.setAttribute('src', '../JavaScript/images/hamburger.jpg');
-    } else {
-        newImage.setAttribute('src', '../JavaScript/images/waffle.jpg')
-    }
+food.onclick = function () {
+//    let mySrc = food.getAttribute('src');
+//     if (mySrc === "../JavaScript/images/waffle.jpg") {
+//         food.setAttribute('src', "../JavaScript/images/hamburger.jpg");
+//     } else {
+//         food.setAttribute('src', "../JavaScript/images/waffle.jpg");
+//     }
+    alert('it works')
 }
 
 
