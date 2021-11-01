@@ -14,7 +14,7 @@ function q() {
 function changeColor(newColor) {
     let sweet = document.getElementById('clicked');
     sweet.style.color = newColor;
-    console.log('it works HAHAHAHA')
+
 }
 
 function changePic(newPic) {
