@@ -49,7 +49,8 @@ function find() {
     let i
     x = document.querySelectorAll('p');
     for (i = 0; i < x.length; i++){
-        x[i].style.backgroundColor = "blue"
+        x[i].style.backgroundColor = "maroon"
+        x[i].style.color = "white"
     }
 }
 
