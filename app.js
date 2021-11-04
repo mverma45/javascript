@@ -23,9 +23,17 @@ function changePic(newPic) {
 }
 
 //document.querySelector
-let newImage = document.querySelector('img');
+
+let waffle = true;
+const newImage = document.querySelector('#food')
 
 newImage.onclick = function () {
+   
+    const food = waffle ? "hamburger" : "waffle"
+        newImage.setAttribute('src', `./images/${food}.jpg`);
+        
+    waffle = !waffle
+    
     let mySrc = newImage.getAttribute('src');
     if (mySrc === '../JavaScript/images/waffle.jpg') {
         newImage.setAttribute('src', '../JavaScript/images/hamburger.jpg');
@@ -33,7 +41,6 @@ newImage.onclick = function () {
         newImage.setAttribute('src', '../JavaScript/images/waffle.jpg')
     }
 }
-
 
 // document.querySelectorAll
 // const inner = select.querySelectorAll('p')
