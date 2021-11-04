@@ -23,18 +23,21 @@ function changePic(newPic) {
 }
 
 //document.querySelector
-let food = document.querySelector('img');
 
-food.onclick = function () {
-//    let mySrc = food.getAttribute('src');
-//     if (mySrc === "../JavaScript/images/waffle.jpg") {
-//         food.setAttribute('src', "../JavaScript/images/hamburger.jpg");
-//     } else {
-//         food.setAttribute('src', "../JavaScript/images/waffle.jpg");
-//     }
-    alert('it works')
+let waffle = true;
+const newImage = document.querySelector('#food')
+console.log(newImage);
+
+
+newImage.onclick = function () {
+    console.log('clicked', waffle);
+   
+    const food = waffle ? "hamburger" : "waffle"
+        newImage.setAttribute('src', `./images/${food}.jpg`);
+        
+    waffle = !waffle
+    
 }
-
 
 // document.querySelectorAll
 // const inner = select.querySelectorAll('p')
