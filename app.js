@@ -35,10 +35,10 @@ newImage.onclick = function () {
     waffle = !waffle
     
     let mySrc = newImage.getAttribute('src');
-    if (mySrc === '../JavaScript/images/waffle.jpg') {
-        newImage.setAttribute('src', '../JavaScript/images/hamburger.jpg');
+    if (mySrc === './images/waffle.jpg') {
+        newImage.setAttribute('src', './images/hamburger.jpg');
     } else {
-        newImage.setAttribute('src', '../JavaScript/images/waffle.jpg')
+        newImage.setAttribute('src', './images/waffle.jpg')
     }
 }
 
