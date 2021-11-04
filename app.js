@@ -26,11 +26,8 @@ function changePic(newPic) {
 
 let waffle = true;
 const newImage = document.querySelector('#food')
-console.log(newImage);
-
 
 newImage.onclick = function () {
-    console.log('clicked', waffle);
    
     const food = waffle ? "hamburger" : "waffle"
         newImage.setAttribute('src', `./images/${food}.jpg`);
