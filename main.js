@@ -23,20 +23,38 @@ function changePic(newPic) {
 }
 
 //document.querySelector
-let newImage = document.querySelector('img');
+
+let waffle = true;
+const newImage = document.querySelector('#food')
 
 newImage.onclick = function () {
+   
+    const food = waffle ? "hamburger" : "waffle"
+        newImage.setAttribute('src', `./images/${food}.jpg`);
+        
+    waffle = !waffle
+    
     let mySrc = newImage.getAttribute('src');
-    if (mySrc === '../JavaScript/images/waffle.jpg') {
-        newImage.setAttribute('src', '../JavaScript/images/hamburger.jpg');
+    if (mySrc === './images/waffle.jpg') {
+        newImage.setAttribute('src', './images/hamburger.jpg');
     } else {
-        newImage.setAttribute('src', '../JavaScript/images/waffle.jpg')
+        newImage.setAttribute('src', './images/waffle.jpg')
     }
 }
 
 
 // document.querySelectorAll
 // const inner = select.querySelectorAll('p')
+class JavaScript {
+    constructor(noColor) {
+        this.noColor = noColor
+        this.clear()
+   
+    }
+}
+    
+const allClear = document.querySelectorAll('noColor')
+
 function find() {
     let x
     let i
@@ -44,5 +62,11 @@ function find() {
     for (i = 0; i < x.length; i++){
         x[i].style.backgroundColor = "blue"
     }
-}
 
+    
+    allClear.addEventListener('click', button => {
+        JavaScript.clear();
+        console.log('it works')
+    })
+
+}
