@@ -68,8 +68,8 @@ function find() {
 //     }
 // }
 
-const btnClear = document.querySelector('p');
+// const btnClear = document.querySelector('p');
 
-btnClear.addEventListener('click',()=>{
-    inner.array.forEach(inner => inner.value='')
-});
+// btnClear.addEventListener('click',()=>{
+//     inner.array.forEach(inner => inner.value='')
+// });
