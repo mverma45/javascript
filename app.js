@@ -65,8 +65,8 @@ function find() {
 //     }
 // }
 
-const btnClear = document.querySelector('p');
+const clear = document.querySelector('p');
 
-btnClear.addEventListener('click',()=>{
+clear.addEventListener('click',()=>{
     inner.array.forEach(inner => inner.value='')
 });
