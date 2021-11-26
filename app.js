@@ -67,9 +67,12 @@ function find() {
 //         y[z].style.color = "black"
 //     }
 // }
+<<<<<<< HEAD
 
 // const btnClear = document.querySelector('p');
 
 // btnClear.addEventListener('click',()=>{
 //     inner.array.forEach(inner => inner.value='')
 // });
+=======
+>>>>>>> ac24c2c966f55a42fc6b9c70794298ea7770f79f
