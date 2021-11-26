@@ -67,9 +67,3 @@ function find() {
 //         y[z].style.color = "black"
 //     }
 // }
-
-const btnClear = document.querySelector('p');
-
-btnClear.addEventListener('click',()=>{
-    inner.array.forEach(inner => inner.value='')
-});
