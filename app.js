@@ -43,7 +43,7 @@ newImage.onclick = function () {
 }
 
 // document.querySelectorAll
-// const inner = select.querySelectorAll('p')
+const inner = select.querySelectorAll('p')
 function find() {
     let x
     let i
@@ -51,6 +51,22 @@ function find() {
     for (i = 0; i < x.length; i++){
         x[i].style.backgroundColor = "maroon"
         x[i].style.color = "white"
-    }
+    }    
 }
 
+// const inner2 = select.querySelectorAll('p')
+// function clear() {
+//     let y
+//     let z
+//     y = document.querySelectorAll('p');
+//     for (z = 0; z < y.length; z++){
+//         y[z].style.backgroundColor = "white"
+//         y[z].style.color = "black"
+//     }
+// }
+
+const btnClear = document.querySelector('p');
+
+btnClear.addEventListener('click',()=>{
+    inner.array.forEach(inner => inner.value='')
+});
