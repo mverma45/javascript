@@ -14,7 +14,10 @@ function q() {
 function changeColor(newColor) {
     let sweet = document.getElementById('clicked');
     sweet.style.color = newColor;
+}
 
+function bg(){
+document.body.style.backgroundColor = 'grey'
 }
 
 function changePic(newPic) {
