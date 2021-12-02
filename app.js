@@ -17,7 +17,11 @@ function changeColor(newColor) {
 }
 
 function bg(){
-document.body.style.backgroundColor = 'grey'
+document.body.style.backgroundColor = 'grey';
+}
+
+function bg2(){
+    document.body.style.backgroundColor ='white';
 }
 
 function changePic(newPic) {
@@ -57,19 +61,10 @@ function find() {
     }    
 }
 
-// const inner2 = select.querySelectorAll('p')
-// function clear() {
-//     let y
-//     let z
-//     y = document.querySelectorAll('p');
-//     for (z = 0; z < y.length; z++){
-//         y[z].style.backgroundColor = "white"
-//         y[z].style.color = "black"
-//     }
+// function c(){
+//     document.body.style.backgroundColor ='white';
 // }
 
-// const btnClear = document.querySelector('p');
-
-// btnClear.addEventListener('click',()=>{
-//     inner.array.forEach(inner => inner.value='')
-// });
+btnClear.addEventListener('click',()=>{
+    inner.array.forEach(inner => inner.value='')
+});
