@@ -110,8 +110,3 @@ if (randomNumber === 0) {
 } else if (randomNumber === 8 ){
   console.log('Signs point to yes')
 }
-
-btnClear.addEventListener('click',()=>{
-    inner.array.forEach(inner => inner.value='')
-});
-
