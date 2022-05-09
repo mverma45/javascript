@@ -45,7 +45,9 @@ console.log(uiUsableData)
  */
 const thirtyAndBelow = data.filter(age => {
   const ageSeconds = new Date().getTime() - new Date(age.birthDay).getTime()
-  return ageSeconds < 31 * 365 * 86400 * 1000
+
+  return ageSeconds < 30 * 365 * 86400 * 1000
+
 })
 console.log(thirtyAndBelow)
 
@@ -54,7 +56,12 @@ console.log(thirtyAndBelow)
  * Challange Three: Use Array.reduce() to get a new array of a unique list of all the peoples interests. No duplicates.
  * Extra Credit: Complete in 10 lines or less inside of the reduce callback block
  */
-const interests = data.reduce(uInterests => {})
+
+const interests = data.reduce(uInterests => {
+  array.reduce(uInterests(interests, value))
+  return interests
+})
+console.log(interests)
 
 module.exports = {
   uiUsableData,

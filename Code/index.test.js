@@ -74,8 +74,10 @@ if (
 }
 
 // Interests Test
-// if (JSON.stringify(results.interests) === JSON.stringify(interests_result)) {
-//   logGreen("Interests Test: Passed!")
-// } else {
-//   logRed("Interests Test: Failed!")
-// }
+
+if (JSON.stringify(results.interests) === JSON.stringify(interests_result)) {
+  logGreen("Interests Test: Passed!")
+} else {
+  logRed("Interests Test: Failed!")
+}
+
